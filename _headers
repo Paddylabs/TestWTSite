@@ -1,0 +1,7 @@
+# Cloudflare Pages — caching rules
+# "no-cache" = the browser may store the file but MUST revalidate with the
+# server before using it, so edits go live immediately (unchanged files
+# still return a fast 304 Not Modified). Images/fonts keep normal caching.
+
+/*.html
+  Cache-Control: no-cache
