@@ -74,7 +74,7 @@
     /* header */
     .hdr{position:sticky;top:0;z-index:40;background:rgba(244,241,234,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
     .hdr__in{display:flex;align-items:center;gap:28px;height:76px}
-    .hdr__logo{height:42px;display:block}
+    .hdr__logo{height:54px;width:54px;display:block;object-fit:contain}
     .hdr__nav{display:flex;gap:26px;margin-left:8px}
     .hdr__nav a{font-family:var(--font-display);font-weight:600;font-size:15px;color:var(--ink-700);position:relative;padding:4px 0;cursor:pointer}
     .hdr__nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--lime-500);transition:right var(--dur) var(--ease)}
@@ -91,7 +91,8 @@
     /* hero */
     .hero{position:relative;overflow:hidden}
     .hero__in{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:74px 0 84px}
-    .hero h1{font-family:var(--font-display);font-weight:600;font-size:clamp(38px,5vw,60px);line-height:1.04;letter-spacing:-.01em;margin:18px 0 0;color:var(--ink-900)}
+    .hero__brand{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-.015em;margin:16px 0 0;color:var(--slate-700)}
+    .hero h1{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.01em;margin:10px 0 0;color:var(--ink-900)}
     .hero h1 em{font-style:normal;color:var(--slate-600)}
     .hero p.lead{font-size:20px;line-height:1.6;color:var(--fg2);margin:20px 0 30px;max-width:30em}
     .hero__cta{display:flex;gap:14px;flex-wrap:wrap}
@@ -226,7 +227,7 @@
   <!-- Header -->
   <header class="hdr">
     <div class="wrap hdr__in">
-      <a href="#top"><img class="hdr__logo" src="assets/wt/logo-horizontal.jpg" alt="Wellness Therapeutics"></a>
+      <a href="#top"><img class="hdr__logo" src="assets/wt/WT_logo.png" alt="Wellness Therapeutics"></a>
       <nav class="hdr__nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -263,6 +264,7 @@
     <div class="wrap hero__in">
       <div class="hero__copy">
         <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Physiotherapy &amp; rehab</span>
+        <span class="hero__brand">Wellness Therapeutics</span>
         <h1>Move well, feel well, <em>live well.</em></h1>
         <p class="lead">If you're in pain or recovering from an injury, let us help you. Expert, evidence-based physiotherapy built around how you actually move - helping you to help yourself, right here in Prudhoe.</p>
         <div class="hero__cta">
