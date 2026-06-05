@@ -1,0 +1,14 @@
+# Cloudflare Pages — redirects from the OLD Squarespace site to the new pages.
+# Format:  <old path>   <destination>   <status>
+# Real files (/, /privacy.html, /sitemap.xml, /assets/*) are served normally;
+# these rules only fire for paths that don't exist on the new site.
+
+/wellbeing            /            301
+/pain-management      /#services   301
+/yoga-and-meditation  /#services   301
+/services             /#services   301
+/about                /#about      301
+/contact              /#book       301
+
+# Catch-all: any other old/unknown path goes to the homepage (no 404s)
+/*                    /            301
