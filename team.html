@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acupuncture in Prudhoe | Wellness Therapeutics</title>
-  <meta name="description" content="Acupuncture in Prudhoe from chartered physiotherapists, used alongside physiotherapy to help ease musculoskeletal pain.">
-  <link rel="canonical" href="https://www.wellnesstherapeutics.co.uk/acupuncture.html">
+  <title>Meet the Team | Wellness Therapeutics, Prudhoe</title>
+  <meta name="description" content="Meet the chartered physiotherapists at Wellness Therapeutics in Prudhoe, Northumberland - HCPC registered, evidence-based and genuinely invested in your recovery.">
+  <link rel="canonical" href="https://www.wellnesstherapeutics.co.uk/team.html">
   <meta name="theme-color" content="#4C7187">
 
   <meta name="geo.region" content="GB-NBL">
@@ -13,31 +13,35 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wellness Therapeutics">
-  <meta property="og:title" content="Acupuncture in Prudhoe | Wellness Therapeutics">
-  <meta property="og:description" content="Acupuncture in Prudhoe from chartered physiotherapists, used alongside physiotherapy to help ease musculoskeletal pain.">
-  <meta property="og:url" content="https://www.wellnesstherapeutics.co.uk/acupuncture.html">
-  <meta property="og:image" content="https://www.wellnesstherapeutics.co.uk/assets/wt/treat-needling.jpg">
+  <meta property="og:title" content="Meet the Team | Wellness Therapeutics">
+  <meta property="og:description" content="Meet the chartered physiotherapists at Wellness Therapeutics in Prudhoe, Northumberland.">
+  <meta property="og:url" content="https://www.wellnesstherapeutics.co.uk/team.html">
+  <meta property="og:image" content="https://www.wellnesstherapeutics.co.uk/assets/wt/office.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Acupuncture in Prudhoe | Wellness Therapeutics">
-  <meta name="twitter:description" content="Acupuncture in Prudhoe from chartered physiotherapists, used alongside physiotherapy to help ease musculoskeletal pain.">
-  <meta name="twitter:image" content="https://www.wellnesstherapeutics.co.uk/assets/wt/treat-needling.jpg">
+  <meta name="twitter:title" content="Meet the Team | Wellness Therapeutics">
+  <meta name="twitter:description" content="Meet the chartered physiotherapists at Wellness Therapeutics in Prudhoe, Northumberland.">
+  <meta name="twitter:image" content="https://www.wellnesstherapeutics.co.uk/assets/wt/office.jpg">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalTherapy",
-    "name": "Acupuncture",
-    "description": "Fine needles, used alongside physiotherapy, to help ease pain related to musculoskeletal issues.",
-    "url": "https://www.wellnesstherapeutics.co.uk/acupuncture.html",
-    "provider": {
-      "@type": "Physiotherapy",
-      "name": "Wellness Therapeutics",
-      "url": "https://www.wellnesstherapeutics.co.uk/"
+    "@type": "Physiotherapy",
+    "name": "Wellness Therapeutics",
+    "url": "https://www.wellnesstherapeutics.co.uk/team.html",
+    "telephone": "+447947444179",
+    "address": {
+      "@type": "PostalAddress",
+      "name": "The Treatment Room, St Matthew's Wellness Centre",
+      "streetAddress": "South Road",
+      "addressLocality": "Prudhoe",
+      "addressRegion": "Northumberland",
+      "postalCode": "NE42 5JR",
+      "addressCountry": "GB"
     },
-    "areaServed": [
-      { "@type": "Place", "name": "Prudhoe" },
-      { "@type": "Place", "name": "Northumberland" },
-      { "@type": "Place", "name": "Tyne Valley" }
+    "employee": [
+      { "@type": "Person", "name": "Kelly Norman", "jobTitle": "Chartered Physiotherapist, Founder" },
+      { "@type": "Person", "name": "Fiona", "jobTitle": "Chartered Physiotherapist" },
+      { "@type": "Person", "name": "Connor", "jobTitle": "Chartered Physiotherapist" }
     ]
   }
   </script>
@@ -100,6 +104,8 @@
     .hdr__nav a{font-family:var(--font-display);font-weight:600;font-size:15px;color:var(--ink-700);position:relative;padding:4px 0;cursor:pointer}
     .hdr__nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--lime-500);transition:right var(--dur) var(--ease)}
     .hdr__nav a:hover::after{right:0}
+    .hdr__nav a[aria-current="page"]{color:var(--ink-900)}
+    .hdr__nav a[aria-current="page"]::after{right:0}
     .hdr__nav a.cross{color:var(--slate-700)}
     .hdr__right{margin-left:auto;display:flex;align-items:center;gap:18px}
     .hdr__phone{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;color:var(--slate-700);font-size:15px;white-space:nowrap}
@@ -131,30 +137,26 @@
     .section__head h2{font-family:var(--font-display);font-weight:600;font-size:clamp(26px,3.2vw,38px);line-height:1.14;margin:14px 0 0;color:var(--ink-900)}
     .section__head p{font-size:17px;line-height:1.6;color:var(--fg2);margin:16px 0 0}
 
+    /* team */
+    .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:820px;margin:0 auto}
+    /* an odd final card sits centred rather than stranded in the left column */
+    .team-grid>.member:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;width:calc(50% - 14px)}
+    .member{text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;gap:22px;align-items:flex-start}
+    .member__photo{border-radius:var(--r-lg);overflow:hidden;width:150px;flex:none;aspect-ratio:3/4;box-shadow:var(--shadow-sm);background:var(--slate-100)}
+    .member__photo img{width:100%;height:100%;object-fit:cover}
+    .member h3{font-family:var(--font-display);font-weight:600;font-size:20px;margin:0;color:var(--ink-900)}
+    .member .role{font-size:13.5px;color:var(--lime-700);font-weight:600;margin-top:3px}
+    .member .bio{font-size:14px;color:var(--fg2);margin-top:10px;line-height:1.6}
+    .member .creds{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+    .member .creds span{font-family:var(--font-display);font-weight:600;font-size:11.5px;background:var(--slate-100);color:var(--slate-700);padding:4px 10px;border-radius:var(--r-pill)}
+    .member .tag{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+      background:var(--lime-100);color:var(--lime-700);padding:4px 10px;border-radius:var(--r-pill);margin-bottom:9px}
+
     .checklist{list-style:none;padding:0;margin:24px auto 0;max-width:720px;display:grid;gap:14px}
     .checklist li{display:flex;gap:13px;align-items:flex-start;font-size:16px;color:var(--ink-700);line-height:1.5}
     .checklist .ck{width:26px;height:26px;border-radius:50%;background:var(--lime-500);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;margin-top:1px}
     .checklist .ck svg{width:15px;height:15px}
     .checklist b{font-family:var(--font-display);font-weight:600;color:var(--ink-900)}
-
-    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .svc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease)}
-    .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
-    .svc__ic{width:54px;height:54px;border-radius:var(--r-md);background:var(--lime-100);color:var(--lime-700);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-    .svc__ic svg{width:27px;height:27px}
-    .svc h3{font-family:var(--font-display);font-weight:600;font-size:20px;margin:0 0 8px;color:var(--ink-900)}
-    .svc p{font-size:14.5px;line-height:1.6;color:var(--fg2);margin:0 0 20px}
-    .svc__photo{margin-top:auto;width:100%;aspect-ratio:4/3;border-radius:var(--r-md);overflow:hidden;background:var(--slate-50)}
-    .svc__photo img{width:100%;height:100%;object-fit:cover;display:block}
-
-    .faq{max-width:760px;margin:0 auto;display:grid;gap:14px}
-    .faq__item{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
-    .faq__item summary{list-style:none;cursor:pointer;padding:18px 22px;font-family:var(--font-display);font-weight:600;font-size:16px;color:var(--ink-900);display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .faq__item summary::-webkit-details-marker{display:none}
-    .faq__item summary::after{content:"+";font-size:22px;line-height:1;color:var(--lime-700);flex:none;transition:transform var(--dur) var(--ease)}
-    .faq__item[open] summary::after{transform:rotate(45deg)}
-    .faq__item .faq__a{padding:0 22px 20px;font-size:15px;line-height:1.6;color:var(--fg2)}
-    .faq__item .faq__a p{margin:0}
 
     .cta-band{position:relative;overflow:hidden;background:var(--peri-500);border-radius:var(--r-xl);padding:64px 56px;display:flex;align-items:center;justify-content:space-between;gap:40px}
     .cta-band h2{font-family:var(--font-display);font-weight:600;font-size:clamp(26px,3vw,38px);color:#fff;margin:0;line-height:1.1;max-width:14em}
@@ -175,14 +177,16 @@
 
     @media(max-width:920px){
       .hero__in{grid-template-columns:1fr;gap:34px}
-      .svc-grid{grid-template-columns:1fr 1fr}
+      .team-grid{grid-template-columns:1fr}
+      .team-grid>.member:last-child:nth-child(odd){width:100%}
       .ftr__grid{grid-template-columns:1fr 1fr}
       .hdr__nav,.hdr__phone{display:none}
       .hdr__toggle{display:block}
       .cta-band{flex-direction:column;align-items:flex-start}
     }
     @media(max-width:560px){
-      .svc-grid{grid-template-columns:1fr}
+      .member{flex-direction:column}
+      .member__photo{width:100%;aspect-ratio:4/3}
       .trust__in{gap:22px}
     }
   </style>
@@ -195,7 +199,7 @@
       <nav class="hdr__nav">
         <a href="index.html#services">Services</a>
         <a href="index.html#about">About</a>
-        <a href="team.html">Team</a>
+        <a href="team.html" aria-current="page">Team</a>
         <a href="index.html#book">Contact</a>
         <a href="https://www.stmattswellness.co.uk/" class="cross">Wellness Centre ↗</a>
       </nav>
@@ -227,12 +231,21 @@
     <img class="hero__lotus" src="assets/wt/lotus-mark-slate.png" alt="" aria-hidden="true">
     <div class="wrap hero__in">
       <div class="hero__copy">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Acupuncture</span>
-        <h1>Acupuncture in Prudhoe</h1>
-        <p class="lead">Fine needles, used alongside physiotherapy, to help ease pain related to musculoskeletal issues - one part of a wider, evidence-based treatment plan.</p>
+        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Meet the team</span>
+        <h1>The people in your corner</h1>
+        <p class="lead">Chartered physiotherapists who genuinely care about your progress - HCPC registered, evidence-based, and here in Prudhoe for every stage of your recovery.</p>
+        <div class="hero__cta">
+          <a href="https://wellness-therapeutics.uk1.cliniko.com/bookings#service" target="_blank" rel="noopener" class="btn btn--accent btn--lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book an appointment
+          </a>
+          <a href="index.html#services" class="btn btn--ghost btn--lg">Our services
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
       </div>
       <div class="hero__media">
-        <img src="assets/wt/treat-needling.jpg" alt="Acupuncture">
+        <img src="assets/wt/office.jpg" alt="Physiotherapy treatment at Wellness Therapeutics">
       </div>
     </div>
   </section>
@@ -247,111 +260,62 @@
     </div>
   </div>
 
-  <!-- What it involves -->
-  <section class="section">
+  <!-- Team -->
+  <section class="section" id="team">
     <div class="wrap">
       <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">What's involved</span>
-        <h2>Needling as part of your wider plan</h2>
-        <p>We use acupuncture alongside - not instead of - physiotherapy assessment and treatment.</p>
+        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Our physiotherapists</span>
+        <h2>Who you'll be working with</h2>
+        <p>Whoever you see, you'll get the same thorough assessment and a plan built around how you actually move.</p>
       </div>
-      <ul class="checklist">
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Targeted needling.</b> Fine, sterile, single-use needles placed at specific points or trigger points.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Pain relief support.</b> Used to help ease pain and muscle tension so you can move and exercise more comfortably.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Combined with physiotherapy.</b> Always alongside a wider assessment and treatment plan, not as a stand-alone treatment.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Discussed before treatment.</b> We'll explain what to expect and answer any questions before your first session.</span></li>
-      </ul>
+      <div class="team-grid">
+        <article class="member">
+          <div class="member__photo"><img src="assets/wt/kelly-wt.jpg" alt="Kelly Norman, Chartered Physiotherapist"></div>
+          <div>
+            <h3>Kelly Norman</h3>
+            <div class="role">Chartered Physiotherapist · Founder</div>
+            <p class="bio">Kelly takes a holistic view of your health and wellbeing while keeping treatment evidence-based. NHS-trained with private practice and sports-team experience, she's also a yoga and meditation teacher.</p>
+            <div class="creds"><span>BSc Sport Therapy</span><span>MSc Physiotherapy</span><span>HCPC</span><span>Yoga teacher</span></div>
+          </div>
+        </article>
+        <article class="member">
+          <div class="member__photo"><img src="assets/wt/fiona-portrait.jpg" alt="Fiona, Chartered Physiotherapist"></div>
+          <div>
+            <h3>Fiona</h3>
+            <div class="role">Chartered Physiotherapist</div>
+            <p class="bio">Qualified from Northumbria University in 2005, Fiona has a BSc in physiotherapy and specialises in orthopaedic trauma, sports injuries and lower-limb biomechanics, with extensive rehab experience for triathletes, cyclists, runners, strength athletes and rugby players.</p>
+            <div class="creds"><span>Orthopaedic trauma</span><span>Sports injuries</span><span>Biomechanics</span><span>HCPC</span></div>
+          </div>
+        </article>
+
+        <article class="member">
+          <div class="member__photo"><img src="assets/wt/connor.jpg" alt="Connor, Chartered Physiotherapist"></div>
+          <div>
+            <span class="tag">New member</span>
+            <h3>Connor</h3>
+            <div class="role">Chartered Physiotherapist</div>
+            <p class="bio">Connor has a First Class Honours BSc in Physiotherapy and over two years in sports massage and rehabilitation. He specialises in musculoskeletal injuries, pain and post-operative rehab, and trains in Brazilian Jiu-Jitsu, MMA, strength and calisthenics.</p>
+            <div class="creds"><span>Musculoskeletal</span><span>rehab</span><span>BSc Physiotherapy</span><span>HCPC</span></div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Who it's for -->
+  <!-- How we work -->
   <section class="section section--cool">
     <div class="wrap">
       <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Who it's for</span>
-        <h2>Where needling can help</h2>
-        <p>Acupuncture can be a useful addition for a range of musculoskeletal complaints.</p>
+        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">How we work</span>
+        <h2>What every appointment has in common</h2>
+        <p>Different specialisms, the same standard of care.</p>
       </div>
       <ul class="checklist">
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Muscle tension &amp; trigger points.</b> Tight, knotted muscles that haven't responded to other treatment alone.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Chronic aches.</b> Long-standing musculoskeletal pain alongside your wider treatment plan.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Sports &amp; overuse injuries.</b> Used alongside rehab to help manage pain during recovery.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Anyone curious to try it.</b> If you're not sure it's for you, we're happy to talk it through at your appointment.</span></li>
+        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Chartered and HCPC registered.</b> Every physiotherapist here is fully qualified, insured and registered.</span></li>
+        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>A proper assessment first.</b> A full 45 minute initial appointment before any treatment plan is agreed.</span></li>
+        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Evidence-based, holistic care.</b> Treatment built around your goals and how you actually move.</span></li>
+        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Part of St Matthew's.</b> Physio that connects with classes, therapies and wellbeing under one roof.</span></li>
       </ul>
-    </div>
-  </section>
-
-  <!-- What to expect -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">First appointment</span>
-        <h2>What to expect at your first appointment</h2>
-        <p>Every plan starts with understanding you - how you move, work and live - before we agree what's next.</p>
-      </div>
-      <ul class="checklist">
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Thorough consultation first.</b> A full 45 minute initial appointment.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Traditional technique, modern practice.</b> Sterile, single-use needles in a calm, professional setting.</span></li>
-        <li><span class="ck"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>A plan Tailored to you.</b> Clear guidance on frequency and how we'll track progress.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FAQs -->
-  <section class="section section--warm" id="faqs">
-    <div class="wrap">
-      <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Common questions</span>
-        <h2>Frequently asked questions</h2>
-      </div>
-      <div class="faq">
-        <details class="faq__item"><summary>Does acupuncture hurt?</summary><div class="faq__a"><p>Most people feel little more than a brief pinprick, if anything at all. We'll always check you're comfortable throughout.</p></div></details>
-        <details class="faq__item"><summary>Is it safe?</summary><div class="faq__a"><p>Yes,  we use sterile, single-use needles and follow recognised safety guidelines. We'll always check your medical history first.</p></div></details>
-        <details class="faq__item"><summary>How many needles are used?</summary><div class="faq__a"><p>This varies by treatment area, but is usually a small number of needles placed precisely rather than many at once.</p></div></details>
-        <details class="faq__item"><summary>Can I have acupuncture on its own, without other physiotherapy?</summary><div class="faq__a"><p>It's offered as part of a wider physiotherapy assessment and plan, so we can make sure it's the right fit for what's going on.</p></div></details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Explore other treatments -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">More ways we can help</span>
-        <h2>Explore other treatments</h2>
-      </div>
-      <div class="svc-grid">
-        <a class="svc" href="sports-injury-rehab.html">
-          <div class="svc__ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <h3>Sports injury rehab</h3>
-          <p>Targeted recovery plans to get you back to training - stronger and steadier than before.</p>
-          <div class="svc__photo"><img src="assets/wt/treat-sports.jpg" alt="Sports injury rehab"></div>
-        </a>
-        <a class="svc" href="manual-therapy.html">
-          <div class="svc__ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M6 14v-3a2 2 0 0 0-4 0v7a6 6 0 0 0 6 6h4a6 6 0 0 0 5.24-3.09l.36-.72A4 4 0 0 0 18 17v-7"/></svg></div>
-          <h3>Manual therapy</h3>
-          <p>Hands-on techniques to ease pain, restore movement and release tension at the source.</p>
-          <div class="svc__photo"><img src="assets/wt/treat-manual.jpg" alt="Manual therapy"></div>
-        </a>
-        <a class="svc" href="post-surgical-rehab.html">
-          <div class="svc__ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 8a4 4 0 0 0-4 4v8h8v-8a4 4 0 0 0-4-4z"/><circle cx="12" cy="2" r="0"/></svg></div>
-          <h3>Post-surgical rehab</h3>
-          <p>Guided, staged recovery after surgery so you regain strength and confidence safely.</p>
-          <div class="svc__photo"><img src="assets/wt/treat-postsurgical.jpg" alt="Post-surgical rehab"></div>
-        </a>
-        <a class="svc" href="physio-led-yoga.html">
-          <div class="svc__ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></svg></div>
-          <h3>Physio led Yoga</h3>
-          <p>Tailored yoga and meditation classes to strengthen mind and body.</p>
-          <div class="svc__photo"><img src="assets/wt/treat-exercise.jpg" alt="Physio led Yoga"></div>
-        </a>
-        <a class="svc" href="back-neck-pain.html">
-          <div class="svc__ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c0-4 2-6 4-6s2 4 4 4 2-4 4-4 4 2 4 6-2 6-4 6-2-4-4-4-2 4-4 4-4-2-4-6z"/></svg></div>
-          <h3>Back &amp; neck pain</h3>
-          <p>Assesment and treatments for aches, pains and dysfunction.</p>
-          <div class="svc__photo"><img src="assets/wt/treat-back.jpg" alt="Back & neck pain"></div>
-        </a>
-      </div>
     </div>
   </section>
 

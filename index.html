@@ -206,16 +206,23 @@
     .checklist .ck svg{width:15px;height:15px}
     .checklist b{font-family:var(--font-display);font-weight:600;color:var(--ink-900)}
 
-    /* team */
-    .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:820px;margin:0 auto}
-    .member{text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;gap:22px;align-items:flex-start}
-    .member__photo{border-radius:var(--r-lg);overflow:hidden;width:150px;flex:none;aspect-ratio:3/4;box-shadow:var(--shadow-sm);background:var(--slate-100)}
-    .member__photo img{width:100%;height:100%;object-fit:cover}
-    .member h3{font-family:var(--font-display);font-weight:600;font-size:20px;margin:0;color:var(--ink-900)}
-    .member .role{font-size:13.5px;color:var(--lime-700);font-weight:600;margin-top:3px}
-    .member .bio{font-size:14px;color:var(--fg2);margin-top:10px;line-height:1.6}
-    .member .creds{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-    .member .creds span{font-family:var(--font-display);font-weight:600;font-size:11.5px;background:var(--slate-100);color:var(--slate-700);padding:4px 10px;border-radius:var(--r-pill)}
+    /* team band — a slim teaser; full profiles live on team.html */
+    .team-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+    /* keeps .wrap's 28px gutter — a bare `padding:22px 0` would override it and let text touch the edge */
+    .team-band__in{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:22px;padding:22px 28px}
+    .team-band__txt{flex:0 1 auto}
+    .team-band__txt b{display:block;font-family:var(--font-display);font-weight:600;font-size:17px;color:var(--ink-900)}
+    .team-band__txt span{display:block;font-size:14.5px;line-height:1.5;color:var(--fg2);margin-top:3px}
+    .team-band .btn{flex:none}
+    .faces{display:flex;flex:none}
+    .faces>*{width:52px;height:52px;border-radius:50%;overflow:hidden;margin-left:-12px;border:3px solid var(--paper);background:var(--slate-100);flex:none}
+    .faces>*:first-child{margin-left:0}
+    /* size comes from .faces>* above — don't re-declare width/height here, it out-specifies it */
+    .faces img{object-fit:cover}
+    /* each portrait is framed differently, so nudge where the circle crops it */
+    .faces .f-kelly{object-position:50% 50%}
+    .faces .f-fiona{object-position:50% 18%}
+    .faces .f-connor{object-position:50% 4%}
 
     /* booking / contact */
     .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
@@ -265,7 +272,6 @@
     @media(max-width:920px){
       .hero__in,.split,.book-grid{grid-template-columns:1fr;gap:34px}
       .svc-grid{grid-template-columns:1fr 1fr}
-      .team-grid{grid-template-columns:1fr}
       .ftr__grid{grid-template-columns:1fr 1fr}
       .hdr__nav,.hdr__phone{display:none}
       .hdr__toggle{display:block}
@@ -273,9 +279,10 @@
     }
     @media(max-width:560px){
       .svc-grid{grid-template-columns:1fr}
-      .member{flex-direction:column}
-      .member__photo{width:100%;aspect-ratio:4/3}
       .trust__in{gap:22px}
+      .team-band__in{flex-direction:column;text-align:center;gap:14px}
+      .team-band .btn{width:100%;justify-content:center}
+      .faces>*{width:46px;height:46px}
     }
   </style>
 </head>
@@ -288,7 +295,7 @@
       <nav class="hdr__nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#team">Team</a>
+        <a href="team.html">Team</a>
         <a href="#book">Contact</a>
         <a href="https://www.stmattswellness.co.uk/" class="cross">Wellness Centre ↗</a>
       </nav>
@@ -309,7 +316,7 @@
     <div class="hdr__mobile" id="hdr-mobile">
       <a href="#services" onclick="closeMenu()">Services</a>
       <a href="#about" onclick="closeMenu()">About</a>
-      <a href="#team" onclick="closeMenu()">Team</a>
+      <a href="team.html" onclick="closeMenu()">Team</a>
       <a href="#book" onclick="closeMenu()">Contact</a>
       <a href="https://www.stmattswellness.co.uk/">Wellness Centre ↗</a>
     </div>
@@ -438,36 +445,23 @@
     </div>
   </section>
 
-  <!-- Team -->
-  <section class="section" id="team">
-    <div class="wrap">
-      <div class="section__head">
-        <span class="eyebrow"><img class="leaf" src="assets/wt/leaf-mark.png" alt="">Meet the team</span>
-        <h2>The people in your corner</h2>
-        <p>Chartered physiotherapists who genuinely care about your progress.</p>
+  <!-- Team band — slim teaser; full profiles live on team.html -->
+  <div class="team-band" id="team">
+    <div class="wrap team-band__in">
+      <div class="faces" aria-hidden="true">
+        <img class="f-kelly" src="assets/wt/kelly-wt.jpg" alt="">
+        <img class="f-fiona" src="assets/wt/fiona.jpg" alt="">
+        <img class="f-connor" src="assets/wt/connor.jpg" alt="">
       </div>
-      <div class="team-grid">
-        <article class="member">
-          <div class="member__photo"><img src="assets/wt/kelly-wt.jpg" alt="Kelly Norman, Chartered Physiotherapist"></div>
-          <div>
-            <h3>Kelly Norman</h3>
-            <div class="role">Chartered Physiotherapist · Founder</div>
-            <p class="bio">Kelly takes a holistic view of your health and wellbeing while keeping treatment evidence-based. NHS-trained with private practice and sports-team experience, she's also a yoga and meditation teacher.</p>
-            <div class="creds"><span>BSc Sport Therapy</span><span>MSc Physiotherapy</span><span>HCPC</span><span>Yoga teacher</span></div>
-          </div>
-        </article>
-        <article class="member">
-          <div class="member__photo"><img src="assets/wt/fiona.jpg" alt="Fiona, Chartered Physiotherapist"></div>
-          <div>
-            <h3>Fiona</h3>
-            <div class="role">Chartered Physiotherapist</div>
-            <p class="bio">Qualified from Northumbria University in 2005, Fiona has a BSc in physiotherapy and specialises in orthopaedic trauma, sports injuries and lower-limb biomechanics, with extensive rehab experience for triathletes, cyclists, runners, strength athletes and rugby players.</p>
-            <div class="creds"><span>Orthopaedic trauma</span><span>Sports injuries</span><span>Biomechanics</span><span>HCPC</span></div>
-          </div>
-        </article>
+      <div class="team-band__txt">
+        <b>The people in your corner</b>
+        <span>Kelly, Fiona and Connor.</span>
       </div>
+      <a href="team.html" class="btn btn--ghost btn--sm">Meet the team
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
-  </section>
+  </div>
 
   <!-- Booking / contact -->
   <section class="section section--warm" id="book">
@@ -557,7 +551,7 @@
           <div class="ftr__col">
             <a href="#services">Our services</a>
             <a href="#about">Why us</a>
-            <a href="#team">Meet the team</a>
+            <a href="team.html">Meet the team</a>
             <a href="https://wellness-therapeutics.uk1.cliniko.com/bookings#service" target="_blank" rel="noopener">Book an appointment</a>
           </div>
         </div>
